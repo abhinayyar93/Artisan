@@ -303,7 +303,7 @@
 
 
 /******   responsive media query  *******/
-@media  (max-width:479px){
+@media (min-width:320px) and (max-width:479px){
 
 
     .section-heading1{
@@ -381,9 +381,10 @@
 }
 
 .section-image{
-    max-width: 250px;
-    margin: 15px 8%;
+    width: 60%;
+    margin: 0px 20%;
 }
+
 .section-para1{
     font-size: 12px;
     line-height: 1.5;
@@ -440,8 +441,8 @@
 }
 
 .section-image{
-    max-width: 280px;
-    margin: 15px 15%;
+    width: 60%;
+    margin: 0px 20%;
 }
 .section-para1{
     font-size: 13px;

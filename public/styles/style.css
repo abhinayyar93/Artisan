@@ -357,9 +357,8 @@ body{
     font-weight:300;
     color:#535353;
     line-height:1.9;
-    text-align:justify;
-    padding-left:16px;
-    text-align:center;
+    padding: 0 10px;
+    text-align: justify;
 }
 
 .row-color{
@@ -382,7 +381,7 @@ body{
     color:#222222;
     font-weight:100;
     /*border-bottom:3px solid #c8ad7f;*/
-    padding-bottom:10px;
+    padding : 0 0 10px 0; 
 }
 
 .content{
@@ -471,6 +470,7 @@ margin:0;
     width:170px;
     height:250px;
     padding: 12px;
+    margin-left: 0px;
 }
 
 /*******Index Page ends here******/
@@ -859,7 +859,7 @@ margin-left: 47px;
 
 
     .why-wall-pos-grid{
-        margin-left: 59px;
+        margin-left: 43px;
         padding-bottom: 30px;
         }
 
@@ -881,8 +881,8 @@ margin-left: 47px;
 
 .about-para {
     text-align: justify;
-    width: 81%;
-    margin-left: 27px;
+    width: 100%;
+    margin-left: -22px;
 }
 
 .caption{
@@ -994,7 +994,7 @@ margin-left: 47px;
 
 
     .why-wall-pos-grid{
-        margin-left: 24px;
+        margin-left: 10px;
         padding-bottom: 0px;
         }
 
@@ -1017,8 +1017,8 @@ margin-left: 29px;
 
 .about-para {
     text-align: justify;
-    width: 81%;
-    margin-left: 27px;
+    width: 100%;
+    margin-left: -24px;
 }
 .caption{
    font-size: 16px;
@@ -1096,10 +1096,10 @@ margin-left: 29px;
  /*****Index page*****/
 
 .wall-img {
-     width: 120px;
+    width: 120px;
     height: 200px;
     padding: 4px;
-    margin-left: 21px;
+    margin-left: 20px;
 }
 .product-image {
     width: 75%;
@@ -1107,7 +1107,9 @@ margin-left: 29px;
     margin-left: 41px;
 }
 .about-para{
-    width:79%;
+    width: 100%;
+    margin-left: -25px;
+
 }
 
 .about-heading{
