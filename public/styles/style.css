@@ -1406,8 +1406,14 @@ border-radius:5px
 
 /*//////////////carousel css////////////////*/
 
-.slick-slider{
+/* .slick-slider{
     width : 800px;
+} */
+.carousel-img{
+    width : 247px;
+    height : 330px;
+    /* margin : 5px; */
+    padding : 36px;
 }
 #container
 {
@@ -1417,8 +1423,6 @@ border-radius:5px
     width:100%;
     padding: 0 22.5px;
     background: #f2f1ef;
-
-
 }
 
 .breadcram-cat{

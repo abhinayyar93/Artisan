@@ -185,7 +185,7 @@ var url = window.location.href;
       return false;
     } else {
     $.ajax({
-    url: "https://mailthis.to/surajprakash094@gmail.com", 
+    url: "https://mailthis.to/artisandecor@artisanindia.com", 
     method: "POST",
     data: {name: name.value,
        email: email.value,
@@ -195,7 +195,7 @@ var url = window.location.href;
 });
       e.preventDefault();
       $(this).get(0).reset();
-      document.getElementById('return-text').innerHTML = "* Thank You! Our program advisor will contact you soon";
+      document.getElementById('return-text').innerHTML = "Thank You! Our program advisor will contact you soon";
     //   window.location = "http://localhost:3000/products";
       window.history.go(0);
     }
@@ -213,7 +213,7 @@ var $window = $(window);
         
           // $(window).resize(function() {
       $(".regular").slick({
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -225,7 +225,7 @@ var $window = $(window);
         // $(document).on('ready', function() {
           // $(window).resize(function() {
       $(".regular").slick({
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -237,7 +237,7 @@ var $window = $(window);
         // $(document).on('ready', function() {
           // $(window).resize(function() {
       $(".regular").slick({
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -247,7 +247,7 @@ var $window = $(window);
     // });
     }
 });
-
+////////////////////////////////////slick ends here////////////////////////
 var year = document.querySelector("#year");
 year.textContent = new Date().getFullYear();
 

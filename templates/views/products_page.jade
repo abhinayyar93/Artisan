@@ -354,7 +354,7 @@ block intro
                         span
                         i#button5.fa.fa-filter.filterbutton(onclick="javascript:applySetting()")  
                 //- button#button.btn.btn-default(type = 'button' onclick="javascript:applySetting()") Filter
-            .col-md-9
+            .col-md-12
                 #content(role='main')
                     nav.woocommerce-breadcrumb
                         a(href='/') Home &#47; 
@@ -388,7 +388,7 @@ block intro
                                 .regular
                                     each roomshot in Roomshots
                                         div
-                                            img(src="/images/roomshots/" + roomshot.images + ".jpg",width = '247px', height='330px')
+                                            img(src="/images/roomshots/" + roomshot.images + ".jpg",class = "carousel-img")
                                         
                 
                 if products.length
