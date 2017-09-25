@@ -1412,8 +1412,8 @@ border-radius:5px
 .carousel-img{
     width : 247px;
     height : 330px;
-    /* margin : 5px; */
     padding : 36px;
+    margin-left : 50px;
 }
 #container
 {
