@@ -48,7 +48,10 @@ keystone.set('nav', {
 	'Products-list': 'products',
 	Roomshots: 'Roomshot',
 	'Home-Page': 'Home',
-	'About Us':'About_Us'
+	About_Us:{
+		'About Us':'About_Us',
+		'Product Information':'Product_Information'
+	}
 });
 
 // Start Keystone to connect to your database and initialise the web server

@@ -63,21 +63,25 @@ exports = module.exports = function (app) {
 
 	app.get('/product-info/why-wall-covering', function(req, res){
 		var view = new keystone.View(req, res);
+		view.query('Wall', keystone.list('Product_Information').model.find().where('name', 'whywallcovering'));
 		view.render('why-wall')
 	});
 
 	app.get('/product-info/Installation', function(req, res){
 		var view = new keystone.View(req, res);
+		view.query('Wall', keystone.list('Product_Information').model.find().where('name', 'installationguide'));
 		view.render('install')
 	});
 
 	app.get('/product-info/Maintenance', function(req, res){
 		var view = new keystone.View(req, res);
+		view.query('Wall', keystone.list('Product_Information').model.find().where('name', 'maintenance'));
 		view.render('maint')
 	});
 
 	app.get('/product-info/Warranty', function(req, res){
 		var view = new keystone.View(req, res);
+		view.query('Wall', keystone.list('Product_Information').model.find().where('name', 'warranty'));
 		view.render('warranty')
 	});
 
