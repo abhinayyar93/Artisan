@@ -1,11 +1,11 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-var Home = new keystone.List('Home', {
+var About_Us = new keystone.List('About_Us', {
     autokey: { from: 'title', path: 'slug' },
 });
 
-Home.add({
+About_Us.add({
     title: { type: String},
     name: {type: String},
 
@@ -13,9 +13,6 @@ Home.add({
         one:{type: String},
         two:{type: String},
         three:{type: String},
-        four:{type: String},
-        five:{type: String},
-        six:{type: String},
     },
 
     image : {
@@ -24,21 +21,6 @@ Home.add({
         three:{type: String},
         four:{type: String},
         five:{type: String},
-        six:{type: String},
-        seven:{type: String},
-        eight:{type: String},
-        nine:{type: String},
-        ten:{type: String},
-        eleven:{type: String},
-        twelve:{type: String},
-        thirteen:{type: String},
-        fourteen:{type: String},
-        fifteen:{type: String},
-        sixteen: {type: String},
-        seventeen:{type: String},
-        eightteen:{type: String},
-        
-        
        
     },        
  content: {
@@ -47,9 +29,6 @@ Home.add({
         three: { type: Types.Html, wysiwyg: false, height: 150 },
 		four: { type: Types.Html, wysiwyg: false, height: 150 },
         five: { type: Types.Html, wysiwyg: false, height: 150 },
-        six: { type: Types.Html, wysiwyg: false, height: 150 },
-        seven: { type: Types.Html, wysiwyg: false, height: 150 },
-     
 
 },
       
@@ -57,6 +36,6 @@ Home.add({
 
 });
 
-Home.defaultColumns = 'title';
+About_Us.defaultColumns = 'title';
 
-Home.register();
+About_Us.register();

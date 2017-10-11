@@ -35,20 +35,29 @@ var routes = {
 // Setup Route Bindings
 exports = module.exports = function (app) {
 	// Views
-	app.get('/', routes.views.index);
+	app.get('/', function(req,res){
+		var view = new keystone.View(req, res);
+		view.query('Homes', keystone.list('Home').model.find().where('name', 'Home'));
+		
+		view.render('index')
+
+	});
 
 	app.get('/aboutus/who-we-our', function(req, res){
 		var view = new keystone.View(req, res);
+		view.query('About', keystone.list('About_Us').model.find().where('name', 'whoweare'));
 		view.render('wwr')
 	});
 
 	app.get('/aboutus/our-vision', function(req, res){
 		var view = new keystone.View(req, res);
+		view.query('About', keystone.list('About_Us').model.find().where('name', 'ourvision'));
 		view.render('ourvision')
 	});
 
 	app.get('/aboutus/our-brands', function(req, res){
 		var view = new keystone.View(req, res);
+	    view.query('About', keystone.list('About_Us').model.find().where('name', 'ourbrands'));
 		view.render('ourbrands')
 	});
 
