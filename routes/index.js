@@ -87,6 +87,7 @@ exports = module.exports = function (app) {
 
 	app.get('/getintouch', function(req, res){
 		var view = new keystone.View(req, res);
+		view.query('Contact', keystone.list('Get_InTouch').model.find().where('name', 'contact'));
 		view.render('getintouch')
 	});
 

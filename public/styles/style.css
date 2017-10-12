@@ -1273,15 +1273,14 @@ margin-left:-202px;
 font-family:'Raleway',sans-serif
 }
 #form5 {
-position:relative;
-left:40%;
-max-width:400px;
-min-width:270px;
-padding:10px 50px;
-border:2px solid gray;
-border-radius:10px;
-font-family:raleway;
-background-color:#fff
+    max-width: 400px;
+    min-width: 270px;
+    padding: 10px 50px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-family: raleway;
+    background-color: #fff;
+    margin: 0 auto;
 }
 .p10 {
 margin-top:30px
