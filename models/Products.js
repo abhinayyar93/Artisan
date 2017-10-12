@@ -36,4 +36,5 @@ residential : {type : String}
 
 // });
 
+Product.defaultColumns = "category, prod_name";
 Product.register();
