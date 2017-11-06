@@ -292,6 +292,7 @@ var url = window.location.href;
     } else {
     $.ajax({
     url: "https://mailthis.to/artisandecor@artisanindia.com", //
+    // url: "https://mailthis.to/surajprakash094@gmail.com", //
     method: "POST",
     data: {name: name.value,
        email: email.value,
